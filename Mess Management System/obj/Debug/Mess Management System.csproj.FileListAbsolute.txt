@@ -1,0 +1,21 @@
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\bin\Debug\Mess Management System.exe.config
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\bin\Debug\Mess Management System.exe
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\bin\Debug\Mess Management System.pdb
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess Management System.csprojResolveAssemblyReference.cache
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.MemberUI.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.Properties.Resources.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess Management System.csproj.GenerateResource.Cache
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess Management System.exe
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess Management System.pdb
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.UI.DepositUI.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.UI.ShoppingUI.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.UI.MealUI.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.ViewReport.DepositReport.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.ViewReport.ShoppingReport.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.ViewReport.MealReport.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.ViewReport.MonthlyReport.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.DashBoardUI.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.UI.AboutUI.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.ViewReport.MonthlyMealReport.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.ViewReport.ShoppingCrystalReport.resources
+C:\Users\Mr. Grey\Desktop\Mess Management System\Mess Management System\obj\Debug\Mess_Management_System.UI.LogInUI.resources

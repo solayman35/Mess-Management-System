@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70269DDB-D159-4FF3-981D-D6ABB6D09E84}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mess_Management_System</RootNamespace>
+    <AssemblyName>Mess Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalRrport\crMealReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crMealReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalRrport\crShoppingReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crShoppingReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\AboutUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AboutUI.Designer.cs">
+      <DependentUpon>AboutUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DashBoardUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DashBoardUI.Designer.cs">
+      <DependentUpon>DashBoardUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gateway\DepositGateway.cs" />
+    <Compile Include="Gateway\MealGateway.cs" />
+    <Compile Include="Gateway\MemberGateway.cs" />
+    <Compile Include="Gateway\ShoppingGateway.cs" />
+    <Compile Include="Manager\DepositManager.cs" />
+    <Compile Include="Manager\MealManager.cs" />
+    <Compile Include="Manager\MemberManager.cs" />
+    <Compile Include="Manager\ShoppingManager.cs" />
+    <Compile Include="Model\DepositView.cs" />
+    <Compile Include="Model\Diposit.cs" />
+    <Compile Include="Model\Meal.cs" />
+    <Compile Include="Model\MealView.cs" />
+    <Compile Include="Model\Member.cs" />
+    <Compile Include="Model\Shopping.cs" />
+    <Compile Include="Model\ShoppingView.cs" />
+    <Compile Include="UI\DipositUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DipositUI.Designer.cs">
+      <DependentUpon>DipositUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LogInUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LogInUI.Designer.cs">
+      <DependentUpon>LogInUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MealUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MealUI.Designer.cs">
+      <DependentUpon>MealUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MemberUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MemberUI.Designer.cs">
+      <DependentUpon>MemberUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\ShoppingUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ShoppingUI.Designer.cs">
+      <DependentUpon>ShoppingUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReport\DepositReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReport\DepositReport.Designer.cs">
+      <DependentUpon>DepositReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReport\MealReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReport\MealReport.Designer.cs">
+      <DependentUpon>MealReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReport\MonthlyMealReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReport\MonthlyMealReport.Designer.cs">
+      <DependentUpon>MonthlyMealReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReport\MonthlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReport\MonthlyReport.Designer.cs">
+      <DependentUpon>MonthlyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReport\ShoppingCrystalReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReport\ShoppingCrystalReport.Designer.cs">
+      <DependentUpon>ShoppingCrystalReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReport\ShoppingReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReport\ShoppingReport.Designer.cs">
+      <DependentUpon>ShoppingReport.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CrystalRrport\crMealReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crMealReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalRrport\crShoppingReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crShoppingReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AboutUI.resx">
+      <DependentUpon>AboutUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DashBoardUI.resx">
+      <DependentUpon>DashBoardUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DipositUI.resx">
+      <DependentUpon>DipositUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LogInUI.resx">
+      <DependentUpon>LogInUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MealUI.resx">
+      <DependentUpon>MealUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MemberUI.resx">
+      <DependentUpon>MemberUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\ShoppingUI.resx">
+      <DependentUpon>ShoppingUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReport\DepositReport.resx">
+      <DependentUpon>DepositReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReport\MealReport.resx">
+      <DependentUpon>MealReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReport\MonthlyMealReport.resx">
+      <DependentUpon>MonthlyMealReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReport\MonthlyReport.resx">
+      <DependentUpon>MonthlyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReport\ShoppingCrystalReport.resx">
+      <DependentUpon>ShoppingCrystalReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReport\ShoppingReport.resx">
+      <DependentUpon>ShoppingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
